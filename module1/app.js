@@ -19,16 +19,16 @@
             $scope.length = items.length;
             if(items.length < 4 ) {
                 if(items[0] === '') {
-                    $scope.result = ' Input data first ';
+                    $scope.result = 'Please, enter data first';
                     $scope.color = 'red';
                     $scope.border = 'red';
                 } else {
-                    $scope.result = ' Enjoy! ';
+                    $scope.result = 'Enjoy!';
                     $scope.color = 'green';
                     $scope.border = 'green';
                 }
             } else {
-                $scope.result = ' You eat too much! ';
+                $scope.result = 'You eat too much!';
                 $scope.color = 'green';
                 $scope.border = 'green';
             }
