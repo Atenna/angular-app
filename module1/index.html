@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="module1_style.css">
+    <title>Lunch Check</title>
+</head>
+<body ng-app="LunchCheck">
+    <div class="app-class">
+        <!--Header-->
+        <div class="header-class">
+            <span class="glyphicon glyphicon-apple inline-class"></span>
+            <h2>Lunch Check</h2>
+            <ul>
+                <li><a href="#">About Assignment</a></li>
+            </ul>
+        </div>
+
+        <!--Body-->
+        <div class="container-class" ng-controller="LunchCheckController">
+            <h5>What do you usually eat for lunch?</h5>
+            <input type="text" size="70" ng-model="lunch">
+            <button type="button" class="btn btn-primary" ng-click="calculate();">
+                Check If Too Much</button>
+            <div class="result-class color-{{color}}">
+                <span class="glyphicon glyphicon-chevron-right inline-class"></span>
+                <p class="inline-class"> {{result}}</p>
+            </div>
+        </div>
+        <!--Footer-->
+        <div></div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
